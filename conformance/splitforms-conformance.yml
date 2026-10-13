@@ -1,0 +1,35 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://splitforms.com/security
+sources:
+- https://splitforms.com/security
+standards:
+- id: soc2
+  conforms: true
+  evidence: Supabase — managed Postgres, magic-link Auth, Storage. SOC 2 Type II, AES-256 at rest.
+- id: soc2
+  conforms: true
+  evidence: Cloudflare — DNS, CDN, and edge TLS termination. SOC 2 Type II.
+- id: pci-dss
+  conforms: true
+  evidence: Stripe — billing under PCI DSS Level 1; we never see your card number.
+- id: gdpr
+  conforms: true
+  evidence: Is splitforms GDPR compliant? + splitforms helps you meet GDPR for the form submissions you collect.
+- id: ccpa
+  conforms: true
+  evidence: Are you CCPA compliant? + Yes for the data we hold about you as a splitforms account holder.
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: false
+  evidence: no securitySchemes declared
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+docs: https://splitforms.com/security

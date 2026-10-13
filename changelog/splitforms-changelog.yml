@@ -1,0 +1,96 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://splitforms.com/changelog
+sources:
+- https://splitforms.com/changelog
+entries:
+- breaking: false
+  highlights:
+  - Pricing Annual plan at $49/year replaces the 3-Year plan
+  - New buyers now choose between Free (500 submissions, no card, no time limit), Pro at $5/month for 5,000 submissions a month, and Annual at
+    $49/year (about $4.08/month) for 15,000 submissions a month with every Pro feature.
+  - The $1/month Starter plan and the $59 3-Year plan are no longer sold.
+  - Existing Starter and 3-Year subscribers keep their plan, price and limits until they cancel.
+  date: '2026-09-29'
+- breaking: false
+  highlights:
+  - Partial leads and drop-off analytics now work with any form
+  - Partial-lead capture and drop-off analytics used to need the builder's iframe embed.
+  - 'They now run from one line — <script src="https://splitforms.com/embed.js" async></script> — placed after any form that posts to splitforms:
+    hand-written HTML, React, WordPress, or the builder.'
+  - No cookies and no localStorage.
+  date: '2026-09-29'
+- breaking: false
+  highlights:
+  - Reorganized settings and a new Account page
+  - Form settings now open as focused tabs — General, Notifications, Auto-reply, After submit, Spam, Integrations, Data capture, Branding, Payments,
+    and Danger zone — so each option has one obvious home, and old deep links still land in the right place.
+  - Account-wide settings — your profile, dashboard logo, and the custom sending domain (SMTP) that applies to every form — moved to a new Account
+    page.
+  date: '2026-09-29'
+- breaking: false
+  highlights:
+  - Free plan raised to 500 submissions
+  - The Free plan now includes 500 submissions with no card and no time limit, up from 200.
+  - Existing free accounts got the higher allowance automatically.
+  - Forms stay unlimited and notification emails stay free on every plan.
+  date: '2026-09-13'
+- breaking: false
+  highlights:
+  - Form drop-off analytics
+  - Paid plans can now see how many visitors view a form, how many start it, how many finish, and the field where the rest give up.
+  - 'Tracking is anonymous: counts and field names only, with no cookies and no personal data unless you separately turn on partial-lead capture.'
+  date: '2026-09-05'
+- breaking: false
+  highlights:
+  - Stripe payments launched — charge through any form
+  - Forms can now collect payments.
+  - Connect your own Stripe account in one click, set a fixed amount in Form settings → Payments, and submitters are sent to Stripe Checkout after
+    they submit — for deposits, bookings, order forms, and paid contact.
+  - The money goes straight to your Stripe account (splitforms never holds your funds), every submission is marked paid or unpaid in your dashboard,
+    and refunds, receipts, and payouts live in your own Stripe dashboard.
+  date: '2026-08-27'
+- breaking: false
+  highlights:
+  - Webhook delivery log with one-click replay
+  - Every webhook POST — live submission, test, or replay — is now logged with its status, error, and attempt count, kept for 30 days.
+  - The webhook page shows the recent deliveries and a Replay button re-sends the original submission to the same endpoint, so a missed delivery
+    is a one-click fix instead of a support ticket.
+  - Network errors, timeouts, and 5xx responses on live submissions get one automatic retry, and the log shows how many attempts each delivery
+    took.
+  date: '2026-08-27'
+- breaking: false
+  highlights:
+  - Trusted senders — Not spam now sticks
+  - Marking a message Not spam now allowlists that sender's email address, so the spam filter never quarantines them again — and marking a message
+    as spam withdraws the trust.
+  - Hostile payloads (SQL injection, script probes) are still always quarantined regardless.
+  date: '2026-08-27'
+- breaking: false
+  highlights:
+  - Per-plan file storage allowances
+  - 'File uploads now come with a clear storage allowance per plan: 500 MB on Pro, 5 GB on Business and the long-term plan (now Annual), and 25
+    MB on the legacy Starter plan.'
+  - The per-file cap is now 5 MB on every plan (was 10 MB).
+  - When an account's storage is full, new uploads are skipped — text submissions always go through — and the dashboard's Storage page shows exactly
+    how much space is in use.
+  date: '2026-07-10'
+- breaking: false
+  highlights:
+  - Public showcase, embed gallery, and form validator launched
+  - Three new public surfaces went live in the same release.
+  - /showcase is a crawlable index of sites running on splitforms across eight categories.
+  - /embeds is a copy-paste gallery of ten production-grade HTML form snippets — contact, newsletter, lead, RSVP, support, feedback, beta, job,
+    quote, demo.
+  date: '2026-05-08'
+- breaking: false
+  highlights:
+  - Starter tier added at 1,000 submissions/month
+  - Added a $1/month Starter plan with 1,000 submissions a month, webhooks, integrations, and exports, as a low-cost step up from Free.
+  - Pro and the long-term plan were unchanged.
+  - Starter was closed to new buyers on September 29, 2026; existing Starter subscribers keep their plan.
+  date: '2026-05-07'
+current_version: 2026.09.29
+note: Versioning scheme uses a date-based format YYYY.MM.DD.
+docs: https://splitforms.com/changelog

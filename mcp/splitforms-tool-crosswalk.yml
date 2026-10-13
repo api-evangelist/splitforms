@@ -1,0 +1,66 @@
+generated: '2023-10-13'
+method: probed
+source: https://splitforms.com/api/mcp
+status: "200"
+content_type: application/json
+crosswalk:
+  - tool: create_form
+    category: form
+    rest: [createForm]
+    binding: direct
+    confidence: high
+  - tool: list_forms
+    category: form
+    rest: [listForms]
+    binding: direct
+    confidence: high
+  - tool: get_form
+    category: form
+    rest: [getForm]
+    binding: direct
+    confidence: high
+  - tool: update_form
+    category: form
+    rest: [updateForm]
+    binding: direct
+    confidence: high
+  - tool: generate_form
+    category: form
+    rest: [generateForm]
+    binding: direct
+    confidence: high
+  - tool: list_templates
+    category: template
+    rest: [listTemplates]
+    binding: direct
+    confidence: high
+  - tool: list_submissions
+    category: submission
+    rest: [listSubmissions]
+    binding: direct
+    confidence: high
+  - tool: get_submission
+    category: submission
+    rest: [getSubmission]
+    binding: direct
+    confidence: high
+  - tool: create_webhook
+    category: webhook
+    rest: [createWebhook]
+    binding: direct
+    confidence: high
+  - tool: test_webhook
+    category: webhook
+    rest: [testWebhook]
+    binding: direct
+    confidence: high
+  - tool: get_usage
+    category: usage
+    rest: [getUsage]
+    binding: direct
+    confidence: high
+  - tool: get_access_key
+    category: auth
+    rest: [getAccessKey]
+    binding: direct
+    confidence: high

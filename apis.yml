@@ -1,11 +1,14 @@
 aid: splitforms
 name: Split Forms
-description: 'Split Forms provides a hosted form backend service that lets developers collect form submissions without building their own server. It supports HTML, React, Next.js, and AI‑generated sites, delivering submissions via email and a dashboard. The free tier offers 500 submissions with no credit‑card requirement, while paid plans add higher limits, webhooks, file uploads, and team seats.'
+description: Split Forms provides a hosted form backend service that lets developers collect form submissions without building their own server.
+  It supports HTML, React, Next.js, and AI‑generated sites, delivering submissions via email and a dashboard. The free tier offers 500 submissions
+  with no credit‑card requirement, while paid plans add higher limits, webhooks, file uploads, and team seats.
+image: https://splitforms.com/og/hero-form-to-inbox.webp
 url: https://raw.githubusercontent.com/api-evangelist/splitforms/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-12'
 modified: '2026-10-12'
@@ -16,25 +19,98 @@ tags:
 - API
 - Free Tier
 - Webhooks
-apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: AgenticAccess
+  url: agentic-access/splitforms-agentic-access.yml
+- type: Plans
+  url: plans/splitforms-plans-pricing.yml
+- type: Spectral
+  url: rules/splitforms-rules.yml
+- type: Vocabulary
+  url: vocabulary/splitforms-vocabulary.yml
+- type: ChangeLog
+  url: changelog/splitforms-changelog.yml
+- type: Compliance
+  url: https://splitforms.com/security
+- type: Conformance
+  url: conformance/splitforms-conformance.yml
+- type: LLMsTxt
+  url: llms/splitforms-llms.txt
+- type: ToolCrosswalk
+  url: mcp/splitforms-tool-crosswalk.yml
+- type: MCPServer
+  url: mcp/splitforms-mcp.yml
+- type: Hosts
+  url: hosts/splitforms-hosts.yml
+- type: Vendors
+  url: vendors/splitforms-vendors.yml
+- type: Webhooks
+  url: https://splitforms.com/features/webhooks
+- type: StatusPage
+  url: https://splitforms.com/status
+- type: Security
+  url: https://splitforms.com/security
+- type: Roadmap
+  url: https://splitforms.com/roadmap
+- type: ChangeLog
+  url: https://splitforms.com/changelog
+- type: GitHubOrganization
+  url: https://github.com/splitforms
 - type: TrustCenter
   url: security/splitforms-trust-center.yml
 - type: VulnerabilityDisclosure
   url: security/splitforms-vulnerability-disclosure.yml
 - type: DomainSecurity
   url: security/splitforms-domain-security.yml
+- type: APIReference
+  url: https://splitforms.com/api-reference
+- type: Documentation
+  url: https://splitforms.com/docs
+- type: Pricing
+  url: https://splitforms.com/pricing
+- type: Blog
+  url: https://splitforms.com/blog
+- type: TermsOfService
+  url: https://splitforms.com/terms
+- type: PrivacyPolicy
+  url: https://splitforms.com/privacy
+- type: SignUp
+  url: https://splitforms.com/signup
 - type: Website
   url: https://splitforms.com
-- type: Documentation
-  url: https://splitforms.com
+apis:
+- name: Form Submission API
+  description: One HTTPS endpoint that receives HTML, fetch and server‑side form submissions. Provides /api/submit with access_key, rate limits,
+    plans and webhook support.
+  humanURL: https://splitforms.com/api-reference
+  baseURL: https://splitforms.com
+  aid: splitforms:form-submission-api
 x-submission-notes: Hosted form backend; MCP server https://splitforms.com/api/mcp; free plan.
-x-submission-probe: 'root 200, /docs 200, llms.txt 200 (POST /api/submit, /api-reference, webhooks), MCP
-  /api/mcp live: JSON-RPC 401-style error requiring bearer token, soft-404 check 404 (honest). Not in
-  catalog.'
+x-submission-probe: 'root 200, /docs 200, llms.txt 200 (POST /api/submit, /api-reference, webhooks), MCP /api/mcp live: JSON-RPC 401-style error
+  requiring bearer token, soft-404 check 404 (honest). Not in catalog.'
 x-submitted-by: info+splitforms@townmedialabs.com (apis.io/add, 2026-10-12T15:42:54+00:00)
+x-coverage:
+  state: gated
+  reason: partner-login
+  method: derived
+  generated: '2026-10-13'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company serves an API surface but requires credentials before any description of it can be read
+  evidence:
+  - url: https://splitforms.com/openapi.json
+    status: null
+  - url: https://splitforms.com/api/mcp
+    status: 401
+  - url: https://splitforms.com
+    status: 200
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 13
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
