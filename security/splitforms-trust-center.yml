@@ -1,0 +1,19 @@
+generated: '2026-10-12'
+method: searched
+probe: true
+source: https://splitforms.com/security
+url: https://splitforms.com/security
+certifications:
+- SOC 2
+- ISO 27001
+- PCI DSS
+- HIPAA
+- GDPR
+evidence:
+- source: https://splitforms.com/security
+  keywords:
+  - soc 2
+  - iso 27001
+  - pci dss
+  - hipaa
+  - gdpr

@@ -1,7 +1,6 @@
 aid: splitforms
 name: Split Forms
-description: 'Split Forms is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Split Forms provides a hosted form backend service that lets developers collect form submissions without building their own server. It supports HTML, React, Next.js, and AI‑generated sites, delivering submissions via email and a dashboard. The free tier offers 500 submissions with no credit‑card requirement, while paid plans add higher limits, webhooks, file uploads, and team seats.'
 url: https://raw.githubusercontent.com/api-evangelist/splitforms/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
@@ -12,6 +11,11 @@ created: '2026-10-12'
 modified: '2026-10-12'
 tags:
 - Company
+- Form Backend
+- Developer Tools
+- API
+- Free Tier
+- Webhooks
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,6 +23,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/splitforms-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/splitforms-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/splitforms-domain-security.yml
 - type: Website
   url: https://splitforms.com
 - type: Documentation
