@@ -64,5 +64,117 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Split Forms is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://splitforms.com
+Split Forms provides a hosted form backend service that lets developers collect form submissions without building their own server. It supports HTML, React, Next.js, and AI‑generated sites, delivering submissions via email and a dashboard. The free tier offers 500 submissions with no credit‑card requirement, while paid plans add higher limits, webhooks, file uploads, and team seats.
+
+**Areas:** Company · Form Backend · Developer Tools · Free Tier · Webhook
+
+## Split Forms on APIs.io
+
+Everything profiled for Split Forms is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/splitforms/](https://apis.io/providers/splitforms/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Form Submission API](https://apis.io/apis/splitforms/form-submission-api/) — One HTTPS endpoint that receives HTML, fetch and server‑side form submissions. Provides /api/submit with access_key, rate limits, plans and webhook support.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Splitforms Agentic Access](https://apis.io/agentic-access/splitforms/splitforms-agentic-access/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Split Forms API Rules](https://apis.io/rules/splitforms/splitforms-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Splitforms Domain Security](https://apis.io/security/splitforms/splitforms-domain-security/)
+- [Splitforms Trust Center](https://apis.io/security/splitforms/splitforms-trust-center/)
+- [Splitforms Vulnerability Disclosure](https://apis.io/security/splitforms/splitforms-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Splitforms Plans Pricing](https://apis.io/plans/splitforms/splitforms-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://splitforms.com)
+- [Documentation](https://splitforms.com/docs)
+- [API reference](https://splitforms.com/api-reference)
+- [Pricing](https://splitforms.com/pricing)
+- [Sign up](https://splitforms.com/signup)
+- [Changelog](https://splitforms.com/changelog)
+- [Blog](https://splitforms.com/blog)
+- [Security](https://splitforms.com/security)
+- [Compliance](https://splitforms.com/security)
+- [Terms of service](https://splitforms.com/terms)
+- [Privacy policy](https://splitforms.com/privacy)
+- [GitHub](https://github.com/splitforms)
+- [Status](https://splitforms.com/status)
+
+## API Evangelist rating
+
+**Kin Score 44.0** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 35.6 |
+| Operational transparency | 60.5 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 92.1 |
+
+**Agent readiness 9.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/splitforms/](https://apis.io/providers/splitforms/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Split Forms: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/splitforms/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
