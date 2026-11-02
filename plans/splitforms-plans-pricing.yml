@@ -28,8 +28,8 @@ plans:
       - name: submissions
         limit: 15000
 x-canonical:
-  generated: '2026-10-23'
-  vocabulary: all/0-working/economics/plans-canonical.yml
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
   models:
   - free
   - subscription
