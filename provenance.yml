@@ -14,6 +14,9 @@ artifacts:
   finops/splitforms-finops.yml:
     method: derived
     evidence: declared in the artifact
+  heartbeat/2026-11-02.yml:
+    method: unknown
+    evidence: no authorship recorded
   hosts/splitforms-hosts.yml:
     method: derived
     evidence: declared in the artifact
@@ -26,7 +29,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-10-31T095417.yml:
+  kin/checks-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-10-17T145100.yml:
@@ -50,6 +53,15 @@ artifacts:
   kin/score-2026-10-31T095417.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-01T171331.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-01T200237.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-02T082323.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   llms/splitforms-llms-provenance.yml:
     method: searched
     evidence: 'derive-llms-provenance.py: harvested'
@@ -69,9 +81,6 @@ artifacts:
   openapi/splitforms-openapi.json:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/splitforms-submissions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/splitforms-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -88,6 +97,9 @@ artifacts:
     method: searched
     evidence: declared in the artifact
   security/splitforms-vulnerability-disclosure.yml:
+    method: searched
+    evidence: declared in the artifact
+  sla/splitforms-service-levels.yml:
     method: searched
     evidence: declared in the artifact
   vendors/splitforms-vendors.yml:
